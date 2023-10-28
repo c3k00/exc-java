@@ -54,7 +54,7 @@ public class InputFromUser {
 
     private LocalDate parseDateOfBirth(String dateOfBirthString) throws ExceptionParseFromUser {
         try {
-            return LocalDate.parse(dateOfBirthString, DateTimeFormatter.ofPattern("dd.mm.yyyy"));
+            return LocalDate.parse(dateOfBirthString, DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         } catch (Exception e) {
             throw new ExceptionParseFromUser(e.getMessage());
         }
